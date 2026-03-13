@@ -474,3 +474,6 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Config default Engine files
+Config/DefaultEngine.ini
