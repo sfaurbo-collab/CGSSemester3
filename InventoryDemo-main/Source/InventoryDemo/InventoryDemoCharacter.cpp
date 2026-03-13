@@ -52,6 +52,8 @@ AInventoryDemoCharacter::AInventoryDemoCharacter()
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
+
+	EquippedItem = nullptr;
 }
 
 void AInventoryDemoCharacter::BeginPlay()
@@ -86,6 +88,9 @@ void AInventoryDemoCharacter::SetupPlayerInputComponent(UInputComponent* PlayerI
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AInventoryDemoCharacter::Look);
+
+		// Drop
+		EnhancedInputComponent->BindAction(DropAction, ETriggerEvent::Triggered, this, &AInventoryDemoCharacter::Drop);
 	}
 	else
 	{
@@ -126,5 +131,32 @@ void AInventoryDemoCharacter::Look(const FInputActionValue& Value)
 		// add yaw and pitch input to controller
 		AddControllerYawInput(LookAxisVector.X);
 		AddControllerPitchInput(LookAxisVector.Y);
+	}
+}
+
+void AInventoryDemoCharacter::Drop()
+{
+
+	{
+		if (!EquippedItem)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("No weapon item to drop."));
+			return;
+		}
+
+		// Detach from the right-hand socket
+		EquippedItem->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
+
+		// Enable physics if the weapon has a primitive component
+		if (UPrimitiveComponent* PrimComp = Cast<UPrimitiveComponent>(EquippedItem->GetRootComponent()))
+		{
+			PrimComp->SetSimulatePhysics(true);
+			PrimComp->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+		}
+
+		// Optionally clear the reference
+		EquippedItem = nullptr;
+
+		UE_LOG(LogTemp, Log, TEXT("Item dropped from right-hand socket."));
 	}
 }
