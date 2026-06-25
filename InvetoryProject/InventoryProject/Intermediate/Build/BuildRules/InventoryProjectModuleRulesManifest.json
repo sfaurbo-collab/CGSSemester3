@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\CGSSemester3\\InvetoryProject\\InventoryProject\\Source\\InventoryProject\\InventoryProject.Build.cs",
+		"C:\\CGSSemester3\\InvetoryProject\\InventoryProject\\Source\\InventoryProject.Target.cs",
+		"C:\\CGSSemester3\\InvetoryProject\\InventoryProject\\Source\\InventoryProjectEditor.Target.cs"
+	],
+	"EngineVersion": "5.7.4"
+}

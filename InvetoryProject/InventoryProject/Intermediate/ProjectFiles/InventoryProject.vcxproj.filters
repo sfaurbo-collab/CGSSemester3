@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\InventoryProject.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\InventoryProject.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\InventoryProjectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Source\InventoryProject">
+      <UniqueIdentifier>{6B0466FE-0C03-3C97-B404-1E89E2840F49}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\InventoryProject\InventoryProject.Build.cs">
+      <Filter>Source\InventoryProject</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\InventoryProject\InventoryProject.cpp">
+      <Filter>Source\InventoryProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\InventoryProject\InventoryProject.h">
+      <Filter>Source\InventoryProject</Filter>
+    </ClInclude>
+    <Filter Include="Source\InventoryProject\Private">
+      <UniqueIdentifier>{AA9CB8CD-44D6-3412-86E1-05944A55DB83}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\InventoryProject\Private\IPCharacter.cpp">
+      <Filter>Source\InventoryProject\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\InventoryProject\Private\IPCPPAtrSet_01.cpp">
+      <Filter>Source\InventoryProject\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\InventoryProject\Private\IPCPPAtrSet_02.cpp">
+      <Filter>Source\InventoryProject\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\InventoryProject\Private\IPCPPChar_TypeA.cpp">
+      <Filter>Source\InventoryProject\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\InventoryProject\Private\IPCPPChar_TypeB.cpp">
+      <Filter>Source\InventoryProject\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\InventoryProject\Private\IPGameModeBase.cpp">
+      <Filter>Source\InventoryProject\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\InventoryProject\Public">
+      <UniqueIdentifier>{D4BDE094-019B-365D-8B17-7A295432AB48}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\InventoryProject\Public\IPCharacter.h">
+      <Filter>Source\InventoryProject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\InventoryProject\Public\IPCPPAtrSet_01.h">
+      <Filter>Source\InventoryProject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\InventoryProject\Public\IPCPPAtrSet_02.h">
+      <Filter>Source\InventoryProject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\InventoryProject\Public\IPCPPChar_TypeA.h">
+      <Filter>Source\InventoryProject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\InventoryProject\Public\IPCPPChar_TypeB.h">
+      <Filter>Source\InventoryProject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\InventoryProject\Public\IPGameModeBase.h">
+      <Filter>Source\InventoryProject\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
